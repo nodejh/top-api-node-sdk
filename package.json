@@ -1,6 +1,6 @@
 {
   "name": "top-api-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "TaoBao TOP API Node.js SDK",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

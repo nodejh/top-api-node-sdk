@@ -2,16 +2,10 @@ import { request } from 'urllib';
 import {formatDate} from './utils';
 import sign from './sign';
 
-interface ConstructorOptions {
+interface Options {
   appKey: string; // Top 应用的 App Key
   secretKey: string; // Top 应用的 Secret Key,
   api: string; // API 接口地址
-}
-
-interface ClientOptions {
-  appKey: string;
-  secretKey: string;
-  api: string;
 }
 
 interface MapData {
@@ -20,9 +14,9 @@ interface MapData {
 }
 
 class Client {
-  public options: ClientOptions;
+  public options: Options;
 
-  constructor(options: ConstructorOptions) {
+  constructor(options: Options) {
     this.options = options;
   }
 
