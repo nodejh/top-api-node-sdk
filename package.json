@@ -1,0 +1,35 @@
+{
+  "name": "top-api-sdk",
+  "version": "0.0.2",
+  "description": "TaoBao TOP API Node.js SDK",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "npm run eslint && npm run compile",
+    "eslint": "eslint src --ext .ts",
+    "compile": "tsc",
+    "test": "jest"
+  },
+  "keywords": ["TOP API", "TaoBao"],
+  "author": "nodejh",
+  "files": [
+    "lib"
+  ],
+  "repository": ".git",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.4",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "urllib": "^2.34.1"
+  }
+}
