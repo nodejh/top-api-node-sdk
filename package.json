@@ -1,12 +1,13 @@
 {
   "name": "top-api-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TaoBao TOP API Node.js SDK",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "prepublish": "npm run eslint && npm run compile",
     "eslint": "eslint src --ext .ts",
-    "compile": "tsc",
+    "compile": "rm -rf lib && tsc",
     "test": "jest"
   },
   "keywords": ["TOP API", "TaoBao"],
